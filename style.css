@@ -7,7 +7,7 @@
 /* Use variables for commonly used colors */
 :root {
     --primary-bg-color: rgba(25, 146, 212, 1);
-    --secondary-bg-color: grey;
+    --secondary-bg-color: #dbeafe;
     --text-color: white;
 }
 
@@ -42,6 +42,7 @@
     grid-column: 2/5;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Content titles styles */
@@ -50,6 +51,7 @@
     grid-template-columns: 3fr 1fr;
     grid-row: 2/3;
     grid-column: 2/5;
+    align-items: center;
 }
 
 /* Projects box styles */
@@ -126,6 +128,12 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: var(--text-color);
+    border-radius: 10px;
+    border-left: 5px solid orange;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
 }
 
 /* Card images styles */
@@ -144,10 +152,44 @@
 /* Trend styles */
 .trend {
     display: flex;
+    padding: 10px 5px;
 }
 
 /* Trend box styles */
 .trendBox {
     display: flex;
     flex-direction: column;
+}
+
+.projectsTitle{
+    padding-left: 25px;
+}
+
+.contentTitles, .projectsBox, .rightBox{
+    background-color: var(--secondary-bg-color)
+}
+
+.trendingGroup{
+    background-color: var(--text-color);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.announcementsBox{
+    background-color: var(--text-color);
+    padding:10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+.magnify{
+    margin: 0px 20px;
+}
+
+.greeting{
+    margin-left: 10px;
 }
